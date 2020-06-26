@@ -10,6 +10,7 @@ CREATE TABLE cliente(
     direccion VARCHAR(50),
     PRIMARY KEY (id_cliente));
 
+--NO se agregan los campos subtotal, ni total, ni nada, porque todos esos campos se CALCULAN a partir del precio y la cantidad (datos existentes en otras tablas).
 CREATE TABLE factura(
     numero INT,
     fecha DATE,
